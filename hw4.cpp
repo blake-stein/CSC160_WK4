@@ -60,9 +60,13 @@ int main() {
     string location = row[1];
 
     //STUDENT: create the weather report object
-
+WeatherReport report = WeatherReport (location);
+report.setWindSpeed(windSpeed);
+report.setTemperature(temperature);
     //STUDENT: add the weather report to the data vector
+    data.push_back(report);
   }
 
   //STUDENT: cout the number of reports in the data vector
+  cout<< data.size() << endl;
 }
